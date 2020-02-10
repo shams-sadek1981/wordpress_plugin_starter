@@ -1,0 +1,15 @@
+{
+    "name": "shamssadek/wordpress_starter_plugin",
+    "authors": [
+        {
+            "name": "Shams Sadek",
+            "email": "shamssadek@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Inc\\": "./inc"
+        }
+    }
+}
