@@ -1,0 +1,24 @@
+{
+  "name": "wordpress_starter_plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shams-sadek1981/wordpress_plugin_starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shams-sadek1981/wordpress_plugin_starter/issues"
+  },
+  "homepage": "https://github.com/shams-sadek1981/wordpress_plugin_starter#readme",
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^4.0.0-beta.2"
+  }
+}

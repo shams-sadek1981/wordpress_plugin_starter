@@ -20,7 +20,7 @@ if (!defined('ABSPATH')) {
 }
 
 if (!file_exists(__DIR__ . "/vendor/autoload.php")) {
-    exit('Please run `composer dump-autoload`');
+    exit('Please run `composer install or dump-autoload`');
 }
 
 require_once __DIR__ . "/vendor/autoload.php";

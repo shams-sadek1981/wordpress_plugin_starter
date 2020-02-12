@@ -88,4 +88,26 @@ abstract class BaseController {
         return self::$plugin_basename . $basename;
     }
 
+
+    /**
+     * Nonce Verify
+     * 
+     * @param $
+     * 
+     * @return boolean
+     * 
+     */
+
+    public function checkNonce(String $name_of_nonce_field, String $name_of_my_action)
+    {
+        if (
+            !isset($_POST[$name_of_nonce_field])
+            || !wp_verify_nonce($_POST[$name_of_nonce_field], $name_of_my_action)
+        ) {
+            return false;
+
+        } else {
+            return true;
+        }
+    }
 }
