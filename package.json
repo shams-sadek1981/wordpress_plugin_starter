@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/shams-sadek1981/wordpress_plugin_starter#readme",
   "devDependencies": {
+    "css-loader": "^3.4.2",
+    "ts-loader": "^6.2.1",
     "webpack": "^4.41.6",
     "webpack-cli": "^4.0.0-beta.2"
   }

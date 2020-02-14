@@ -19,6 +19,7 @@ final class Init {
         return [
             Base\Enqueue::class,
             Page\AdminPage::class,
+            RestApi\Init::class
         ];
     }
 

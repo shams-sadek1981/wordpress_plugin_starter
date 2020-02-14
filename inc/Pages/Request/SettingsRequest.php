@@ -16,7 +16,13 @@ class SettingsRequest extends BaseController implements RequestInterface {
     public function request($post)
     {
 
-        
+        /**
+         * Save Data
+         */
+        update_option('myname', $post['myname']);
+        update_option('myaddress', $post['myaddress']);
+        update_option('mobile_no', $post['mobile_no']);
+
         error_log(print_r($post, true));
         
     }

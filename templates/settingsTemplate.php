@@ -10,9 +10,23 @@
 <table class="form-table" role="presentation">
     <tbody>
     <tr>
-        <th scope="row"><label for="blogname">Site Title</label></th>
+        <th scope="row"><label for="myname">My Name</label></th>
         <td>
-            <input name="blogname" type="text" id="blogname" value="Sabu" class="regular-text" autocomplete="off">
+            <input name="myname" type="text" id="myname" value="<?php echo get_option('myname');?>" class="regular-text" autocomplete="off">
+        </td>
+    </tr>
+
+    <tr>
+        <th scope="row"><label for="myaddress">My Address</label></th>
+        <td>
+            <input name="myaddress" type="text" id="myaddress" value="<?php echo get_option('myaddress');?>" class="regular-text" autocomplete="off">
+        </td>
+    </tr>
+
+    <tr>
+        <th scope="row"><label for="mobile_no">My Mobile</label></th>
+        <td>
+            <input name="mobile_no" type="text" id="mobile_no" value="<?php echo get_option('mobile_no');?>" class="regular-text" autocomplete="off">
         </td>
     </tr>
 

@@ -8,8 +8,9 @@
 use Inc\Api\AdminCallback;
 use Inc\Api\SettingsApi;
 use Inc\Base\BaseController;
+use Inc\Api\RegisterInterface;
 
-class AdminPage extends BaseController
+class AdminPage extends BaseController implements RegisterInterface
 {
 
     /**

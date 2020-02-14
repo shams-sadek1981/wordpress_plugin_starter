@@ -9,6 +9,15 @@
 abstract class BaseController {
 
     /**
+     * 
+     * Define API version
+     */
+    const VERSION = 'v1';
+
+    
+    const APP_NAME = "wsp";
+
+    /**
      * plugin dir path
      * 
      */

@@ -7,8 +7,9 @@
  */
 
 use Inc\Base\BaseController;
+use Inc\Api\RegisterInterface;
 
-class Enqueue extends BaseController {
+class Enqueue extends BaseController implements RegisterInterface {
 
 
     /**
