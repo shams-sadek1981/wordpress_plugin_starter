@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name:       Wordpress Starter Plugin
+ * Plugin Name:       ABC Plugin
  * Plugin URI:        http://wphive.com/
  * Description:       Essential extension for wordpress starter plugin.
  * Version:           1.0.0

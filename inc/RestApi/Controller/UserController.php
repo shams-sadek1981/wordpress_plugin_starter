@@ -123,4 +123,19 @@ class UserController {
 
         return $response;
     }
+
+
+    public function farazi(WP_REST_Request $request)
+    {
+        
+        $data = array('Farazi','Ahmed');
+
+        // Create the response object
+        $response = new WP_REST_Response($data);
+
+        // Add a custom status code
+        $response->set_status(201);
+
+        return $response;
+    }
 }

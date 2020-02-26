@@ -18,6 +18,8 @@ class UserRoute {
         Route::GET('/user/:name', 'UserController@index');
         
         Route::GET('/user/sadik', 'UserController@sadik');
+
+        Route::GET('/farazi', 'UserController@farazi');
         
         // Route::GET('/user/index', 'UserController@index');
         

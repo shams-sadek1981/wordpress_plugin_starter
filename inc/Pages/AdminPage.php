@@ -92,38 +92,38 @@ class AdminPage extends BaseController implements RegisterInterface
         $admin_page = $this->pages[0];
 
         $this->subpages = [
-            [
-                'parent_slug' => $admin_page['menu_slug'],
-                'page_title' => 'CPT',
-                'menu_title' => 'CPT',
-                'capability' => 'manage_options',
-                'menu_slug' => 'WSP_CPT',
-                'callback' => function () {echo "<h1>Custom Post type</h1>";},
-            ],
-            [
-                'parent_slug' => $admin_page['menu_slug'],
-                'page_title' => 'Settings',
-                'menu_title' => 'Settings',
-                'capability' => 'manage_options',
-                'menu_slug' => 'WSP_Settings',
-                'callback' => [$this->callback, "settings"],
-            ],
-            [
-                'parent_slug' => $admin_page['menu_slug'],
-                'page_title' => 'Talha',
-                'menu_title' => 'Talha',
-                'capability' => 'manage_options',
-                'menu_slug' => 'talha',
-                'callback' => [$this->callback, "talha"],
-            ],
-            [
-                'parent_slug' => $admin_page['menu_slug'],
-                'page_title' => 'Hasinur',
-                'menu_title' => 'Hasinur',
-                'capability' => 'manage_options',
-                'menu_slug' => 'hasinur',
-                'callback' => [$this->callback, "hasinur"],
-            ],
+            // [
+            //     'parent_slug' => $admin_page['menu_slug'],
+            //     'page_title' => 'CPT',
+            //     'menu_title' => 'CPT',
+            //     'capability' => 'manage_options',
+            //     'menu_slug' => 'WSP_CPT',
+            //     'callback' => function () {echo "<h1>Custom Post type</h1>";},
+            // ],
+            // [
+            //     'parent_slug' => $admin_page['menu_slug'],
+            //     'page_title' => 'Settings',
+            //     'menu_title' => 'Settings',
+            //     'capability' => 'manage_options',
+            //     'menu_slug' => 'WSP_Settings',
+            //     'callback' => [$this->callback, "settings"],
+            // ],
+            // [
+            //     'parent_slug' => $admin_page['menu_slug'],
+            //     'page_title' => 'Talha',
+            //     'menu_title' => 'Talha',
+            //     'capability' => 'manage_options',
+            //     'menu_slug' => 'talha',
+            //     'callback' => [$this->callback, "talha"],
+            // ],
+            // [
+            //     'parent_slug' => $admin_page['menu_slug'],
+            //     'page_title' => 'Hasinur',
+            //     'menu_title' => 'Hasinur',
+            //     'capability' => 'manage_options',
+            //     'menu_slug' => 'hasinur',
+            //     'callback' => [$this->callback, "hasinur"],
+            // ],
         ];
     }
 

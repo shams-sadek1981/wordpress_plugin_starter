@@ -29,7 +29,8 @@ class Enqueue extends BaseController implements RegisterInterface {
     public function addEnqueueScripts()
     {
         wp_enqueue_style('mystyle', $this->pluginUrl("assets/css/mystyle.css"));
-        wp_enqueue_script('myscript', $this->pluginUrl("assets/js/myscript.js"));
+        // wp_enqueue_script('myscript', $this->pluginUrl("assets/js/myscript.js"));
+        wp_enqueue_script('myscript', $this->pluginUrl("dist/main.js"), [], false, true);
     }
 
 }
