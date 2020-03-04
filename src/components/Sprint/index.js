@@ -35,6 +35,24 @@ const openNotification = () => {
 
 class Sprint extends Component {
 
+    state = {
+        name: 'Shams Sadek'
+    }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = { date: new Date() };
+    // }
+
+    handleClick() {
+        this.setState(state => ({
+            isToggleOn: !state.isToggleOn
+        }));
+    }
+
+
+    myAddress = () => {
+        return <h2>Mirpur DOHS</h2>
+    }
 
     render() {
 
@@ -76,6 +94,8 @@ class Sprint extends Component {
                 </Button>
                 <button onClick={() => dispatch(changeName('Mishu'))}>Click Me</button>
                 <h2>{this.props.todo.name}</h2>
+                <h2>My Name {this.state.name }</h2>
+                <h2>My Address { this.myAddress()}</h2>
             </div>
         )
     }

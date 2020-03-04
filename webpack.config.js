@@ -18,7 +18,11 @@ module.exports = {
                 exclude: "/node_modules/",
                 include: path.resolve(__dirname, 'src'),
                 use: {
-                    loader: "babel-loader"
+                    loader: "babel-loader",
+                    query: {
+                        presets: ["@babel/preset-env", '@babel/preset-react'],
+                        plugins: ['transform-class-properties']
+                    }
                 }
             },
             {
